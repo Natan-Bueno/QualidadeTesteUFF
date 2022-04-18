@@ -1,24 +1,22 @@
 package fatura;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.util.Date;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import fatura.Fatura;
 
 @DisplayName("Testes da fatura")
 public class fatura_teste {
 	
+	Date data;
 	Fatura fatura;
 
 	@BeforeEach
 	public void inicializa() {
-		fatura = new Fatura(new Date(),"natan", 1000.0, "nao pago");
+		data = new Date();
+		fatura = new Fatura(data,"natan", 1000.0, "nao pago");
 	}
 	
 	@Test
@@ -29,8 +27,8 @@ public class fatura_teste {
 	
 	@Test
 	public void testeGetData() {
-		Date data = fatura.getData();
-		Assertions.assertEquals(data, new Date());
+		Date natan = fatura.getData();
+		Assertions.assertEquals(natan, data);
 	}
 	
 

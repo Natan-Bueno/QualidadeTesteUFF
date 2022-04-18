@@ -21,4 +21,8 @@ public class Fatura {
 		return nome;
 	}
 	
+	public Date getData() {
+		return data;
+	}
+	
 }
