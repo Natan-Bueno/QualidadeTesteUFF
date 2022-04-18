@@ -1,6 +1,9 @@
 package fatura;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.Date;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -15,7 +18,7 @@ public class fatura_teste {
 
 	@BeforeEach
 	public void inicializa() {
-		fatura = new fatura(new Date(),"natan", 1000.0, 'nao pago')
+		fatura = new Fatura(new Date(),"natan", 1000.0, "nao pago");
 	}
 	
 	@Test

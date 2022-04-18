@@ -17,6 +17,8 @@ public class Fatura {
 		this.pago = pago;
 	}
 	
-	
+	public String getNome() {
+		return nome;
+	}
 	
 }
