@@ -19,8 +19,8 @@ public class fatura_teste {
 	}
 	
 	@Test
-	public void testegetnome() {
-		String nome = fatura.getnome();
+	public void testeGetNome() {
+		String nome = fatura.getNome();
 		Assertions.assertEquals(nome, "natan");
 	}	
 
