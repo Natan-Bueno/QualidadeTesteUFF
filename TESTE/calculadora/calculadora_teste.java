@@ -24,4 +24,28 @@ public class calculadora_teste {
 		int divisao = calc.divisao(8, 4);
 		assertTrue(divisao == 2);
 	}
+	
+	@DisplayName("Testa a subtração de dois números")
+	@Test
+	public void testSubtracaoDoisNumeros() {
+		Calculadora calc = new Calculadora();
+		int subtrai = calc.subtracao(10, 2);
+		assertTrue(subtrai == 8);
+	}
+	
+	@DisplayName("Testa se um número é positivo")
+	@Test
+	public void testNumPositivo() {
+		Calculadora calc = new Calculadora();
+		boolean positivo = calc.ehPositivo(10);
+		assertTrue(positivo == true);
+	}
+	
+	@DisplayName("Testa de comparação entre dois números")
+	@Test
+	public void testComparaDoisNumeros() {
+		Calculadora calc = new Calculadora();
+		int comparacao = calc.compara(10,10);
+		assertTrue(comparacao == 0);
+	}
 }
