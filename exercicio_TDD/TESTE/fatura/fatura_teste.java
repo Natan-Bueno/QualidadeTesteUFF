@@ -25,6 +25,13 @@ public class fatura_teste {
 	public void testeGetNome() {
 		String nome = fatura.getNome();
 		Assertions.assertEquals(nome, "natan");
-	}	
+	}
+	
+	@Test
+	public void testeGetData() {
+		Date data = fatura.getData();
+		Assertions.assertEquals(data, new Date());
+	}
+	
 
 }
