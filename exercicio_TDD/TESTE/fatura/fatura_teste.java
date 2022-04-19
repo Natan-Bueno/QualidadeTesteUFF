@@ -27,8 +27,8 @@ public class fatura_teste {
 	
 	@Test
 	public void testeGetData() {
-		Date natan = fatura.getData();
-		Assertions.assertEquals(natan, data);
+		Date dia = fatura.getData();
+		Assertions.assertEquals(dia, data);
 	}
 	
 
