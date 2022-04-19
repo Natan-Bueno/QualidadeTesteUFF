@@ -37,5 +37,11 @@ public class fatura_teste {
 		Assertions.assertEquals(valor, 1000.0);
 	}
 	
+	@Test
+	public void testeGetStatus() {
+		String sts = fatura.getStatus();
+		Assertions.assertEquals(sts, "nao pago");
+	}
+	
 
 }
