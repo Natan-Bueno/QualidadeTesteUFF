@@ -31,5 +31,11 @@ public class fatura_teste {
 		Assertions.assertEquals(dia, data);
 	}
 	
+	@Test
+	public void testeGetValor() {
+		double valor = fatura.getValor();
+		Assertions.assertEquals(valor, 1000.0);
+	}
+	
 
 }
