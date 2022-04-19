@@ -16,7 +16,7 @@ public class fatura_teste {
 	@BeforeEach
 	public void inicializa() {
 		data = new Date();
-		fatura = new Fatura(data,"natan", 1000.0, "nao pago");
+		fatura = new Fatura(data,"natan", 1000.0);
 	}
 	
 	@Test
@@ -40,8 +40,13 @@ public class fatura_teste {
 	@Test
 	public void testeGetStatus() {
 		String sts = fatura.getStatus();
-		Assertions.assertEquals(sts, "nao pago");
+		Assertions.assertEquals(sts, "não pago");
 	}
 	
-
+	@Test
+	public void testeSetStatusPago() {
+		fatura.setStatusPago();
+		String sts = fatura.getStatus();
+		Assertions.assertEquals(sts, "pago");
+	}
 }

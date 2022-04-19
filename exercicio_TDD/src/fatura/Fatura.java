@@ -9,12 +9,12 @@ public class Fatura {
 	private double valor;
 	private String status;
 	
-	public Fatura(Date data, String nome, double valor, String status) {
+	public Fatura(Date data, String nome, double valor) {
 		super();
 		this.data = data;
 		this.nome = nome;
 		this.valor = valor;
-		this.status = status;
+		this.status = "não pago";
 	}
 	
 	public String getNome() {
@@ -31,6 +31,10 @@ public class Fatura {
 	
 	public String getStatus() {
 		return status;
+	}
+	
+	public void setStatusPago() {
+		this.status = "pago";
 	}
 	
 }
